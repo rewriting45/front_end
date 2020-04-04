@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    font-size: 36px;
+    margin: 10px;
+}
+
+h4 {
+    font-size: 30px;
+    margin: 20px 0 20px 10px;
+}
+
+.essential-information {
+    overflow: hidden;
+}
+
+.essential-information ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+.contact-way {
+    overflow: hidden;
+}
+
+.contact-way ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+.s {
+    margin: 10px;
+}
+
