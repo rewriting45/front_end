@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <!-- <link rel="stylesheet" href="css/style_1.css"> -->
+    <link rel="stylesheet" href="css/style_1.css">
+</head>
+
+<body>
+    <header>
+        <h3>简历</h3>
+    </header>
+    <div class="essential-information">
+        <h4 id="mess">基本信息<--点我</h4>
+        <ul>
+            <li id="name"><b>姓名</b>&nbsp;张三<--点我点我</li>
+            <li id="gander"><b>性别</b>&nbsp;男</li>
+            <li id="post"><b>应聘职位</b>&nbsp;Web前端工程师<--点我获取隐藏信息哦</li>
+        </ul>
+    </div>
+    <div class="contact-way">
+        <h4>练习方式</h4>
+        <ul>
+            <li><b>手机</b>&nbsp;1231231234</li>
+            <li><b>Email</b>&nbsp;<a href="#">joine@baidu.com</a></li>
+            <li><b>个人主页</b>&nbsp;<a href="#">Github.com</a></li>
+        </ul>
+    </div>
+
+    <div class="capability-description ">
+        <h4>能力描述</h4>
+        <div class="regular-college-course s">
+            <h5>技术能力</h5>
+            <p>熟练掌握HTML，CSS，JS</p>
+        </div>
+        <div class="graduate-student s">
+            <h5>综合能力</h5>
+            <p>良好的沟通，主动积极，努力勤奋</p>
+        </div>
+    </div>
+
+    <div class="education-experience">
+        <h4>教育经历</h4>
+        <div class="regular-college-course s">
+            <h5>本科</h5>
+            <p>百度前端技术学院小薇学院</p>
+        </div>
+        <div class="graduate-student s">
+            <h5>研究生</h5>
+            <p>百度前端技术学院大斌学院</p>
+        </div>
+    </div>
+
+    <div class="project-experience ">
+        <h4>项目经历</h4>
+        <div class="project_1 s">
+            <h5>小度小度</h5>
+            <p>作为前端工程师参与ABC组件的开发</p>
+        </div>
+        <div class="graduate-student s">
+            <h5>SAN Doc</h5>
+            <p>作为文档工程师参与SAN Doc编写</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('mess').onclick = function () {
+            document.getElementsByClassName('essential-information')[0].style.display = "none";
+        }
+
+        document.getElementById('name').onclick = function () {
+            document.getElementById('name').innerHTML = "This is my name";
+        }
+
+        document.getElementById('post').onclick = function (){
+            document.getElementById('post').innerHTML = "Java工程师"
+        }
+        </script>
+</body>
+
+</html>
