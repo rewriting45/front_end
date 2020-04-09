@@ -1,0 +1,572 @@
+
+@font-face {
+    font-family: 'iconfont';  /* project id 1666584 */
+    src: url('https://at.alicdn.com/t/font_1666584_33vwdji26qq.eot');
+    src: url('https://at.alicdn.com/t/font_1666584_33vwdji26qq.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_1666584_33vwdji26qq.woff2') format('woff2'),
+    url('https://at.alicdn.com/t/font_1666584_33vwdji26qq.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_1666584_33vwdji26qq.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_1666584_33vwdji26qq.svg#iconfont') format('svg');
+}
+
+.icon {
+    font-family: 'iconfont';
+    font-size: 40px;
+    color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+}
+
+html {
+    min-width: 1000px;
+    min-height: 700px;
+}
+
+/* 左导航栏 */
+
+#left-nav {
+    float: left;
+    position: relative;
+    width: 100px;
+    height: 100vh;
+    background: #1d2531;
+}
+
+#left-nav ul {
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+}
+
+#left-nav ul li i {
+    width: 100%;
+    height: 100%;
+}
+
+#left-nav ul li {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    line-height: 54px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+#mes {
+    border: 3px solid #2a9ef5;
+    background: #2a9ef5;
+}
+
+#rocket {
+    border: 3px solid #9480e3;
+    background: #9480e3;
+}
+
+#game {
+    border: 3px solid #e64528;
+    background: #e64528;
+}
+
+#add {
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+#add i {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#bottom-nav {
+    position: absolute;
+    left: 14px;
+    bottom: 18px;
+    display: flex;
+}
+
+#bottom-nav div i{
+    font-size: 18px;
+    margin: 0 8px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* 中间部分 */
+
+#middle {
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 100vh;
+    padding: 30px;
+    background: #222c3c;
+}
+
+#middle-menu {
+    width: 190px;
+    height: 225px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.title-color {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#middle-menu ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+#middle-menu ul li {
+    margin-bottom: 16px;
+    height: 20px;
+    line-height: 20px;
+}
+
+#middle-menu ul li a {
+    overflow: hidden;
+    color: #fff;
+}
+
+#middle-menu ul li a p {
+    float: left;
+}
+
+#middle-menu ul li a div {
+    visibility: hidden;
+    float: right;
+    width: 28px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    background-color: #279bf3;
+    text-align: center;
+    line-height: 20px;
+}
+
+#middle-menu ul li a h4 {
+    float: left;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#middle-menu ul li i {
+    float: right;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#product {
+    margin-top: 20px;
+    width: 190px;
+    height: 200px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#product ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+#product ul li {
+    margin-bottom: 16px;
+    height: 20px;
+    line-height: 20px;
+}
+
+#product ul li a {
+    color: #fff;
+}
+
+#product ul li a i {
+    font-size: 20px;
+    float: left;
+    margin-right: 10px;
+}
+
+#product-one h4 {
+    color: rgba(255, 255, 255, 0.3);
+    float: left;
+}
+
+#product #product-one i {
+    font-size: 20px;
+    float: right;
+    color: rgba(255, 255, 255, 0.3);
+    margin-right: 0;
+}
+
+#dashboard {
+    margin-top: 20px;
+}
+
+#dashboard ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+#dashboard ul li {
+    margin-bottom: 16px;
+    height: 20px;
+    line-height: 20px;
+}
+
+#dashboard ul li a {
+    overflow: hidden;
+    color: #fff;
+}
+
+#dashboard ul li a p {
+    float: left;
+}
+
+#dashboard ul li a div {
+    visibility: hidden;
+    float: right;
+    width: 28px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    background-color: #279bf3;
+    text-align: center;
+    line-height: 20px;
+}
+
+#dashboard ul li a h4 {
+    float: left;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#dashboard ul li i {
+    float: right;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#goal {
+    position: absolute;
+    overflow: hidden;
+    left: 20px;
+    bottom: 20px;
+    text-align: center;
+}
+
+#goal p {
+    font-size: 14px;
+    float: left;
+    color: #fff;
+    margin-right: 10px;
+}
+
+#goal div {
+    float: left;
+}
+
+#goal div span {
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: #fff;
+}
+
+#outer {
+    height: 5px;
+    width: 190px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    margin-top: 10px;
+}
+
+#inner {
+    height: 100%;
+    width: 30%;
+    background: #8464e6;
+}
+
+#messages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#messages-header {
+    overflow: hidden;
+    height: 80px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 15px 30px;
+}
+
+#messages-main {
+    flex: 1;
+    display: flex;
+}
+
+#logo {
+    float: left;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+#user {
+    float: right;
+    width: 200px;
+    height: 40px;
+}
+
+#head-portrait {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+#status {
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+}
+
+#name {
+    float: left;
+    padding: 5px 14px;
+}
+
+#username {
+    font-size: 16px;
+    color: #279bf3;
+}
+
+#power {
+    font-size: 14px;
+}
+
+#user i {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.3);
+    line-height: 50px;
+}
+
+#messages-left {
+    width: 400px;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#message-right {
+    flex: 1;
+}
+
+#messages-search {
+    padding:15px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#messages-search form {
+    position: relative;
+}
+
+#messages-search form input {
+    height: 35px;
+    width: 355px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+#messages-search form a {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    line-height: 35px;
+}
+
+#messages-search form a i {
+    font-weight: 700;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#messages-left ul li {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.user-mes {
+    overflow: hidden;
+}
+
+.user-h {
+    float: left;
+    height: 46px;
+    width: 46px;
+    border-radius: 23px;
+    background: url(../images/Face.png) no-repeat;
+    background-position: -19px -5px;
+    margin-right: 20px;
+}
+
+.user-n {
+    float: left;
+}
+
+#messages-left ul li .user-n p {
+    font-size: 16px;
+    color: #279bf3;
+}
+
+#messages-left ul li .user-n .app {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.time {
+    float: right;
+}
+
+.mess {
+    height: 30px;
+    line-height: 15px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+}
+
+.mes-number {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    right: 20px;
+    top: 77px;
+    border-radius: 13px;
+    text-align: center;
+    line-height: 26px;
+    background: #279bf3;
+    color: #fff;;
+}
+
+#message-right {
+    flex: 1;
+}
+
+#message-right ul li {
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+
+#r-header {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 20px;
+}
+
+#r-header #r-title {
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+}
+ 
+#r-header #st {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #1bb934;
+    margin: 12px;
+}
+
+#r-header #function {
+    position: absolute;
+    float: left;
+    top: 20px;
+    right: 20px;
+}
+
+#function ul {
+    display: flex;
+    
+}
+
+#function ul li {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+#function ul li:nth-of-type(3) {
+    width: 60px;
+    border: none;
+    line-height: 35px;
+}
+
+#function ul li div {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#function ul li div:last-of-type {
+    border: none;
+}
+
+#function ul li div i {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#message-right ul .r-message {
+    padding: 20px;
+}
+
+.user-lmes {
+    overflow: hidden;
+}
+
+.user-lmes>div {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.user-lmes div div {
+    float: left;
+    margin-right: 10px;
+}
+
+#message-right ul .r-message ul li {
+    margin-bottom: 20px;
+    border: none;
+}
