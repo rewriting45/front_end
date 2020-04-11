@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="time"></p>
+
+    <script>
+        let date = new Date().getHours();
+        let p = document.getElementById('time');
+        if (date < 12 && date >= 7){
+            p.innerHTML = "早上好";
+        }else if(date >= 12 && date < 14){
+            p.innerHTML = "午休时间";
+        }else if (date >= 14 && date < 18){
+            p.innerHTML = "下午好";
+        }else {
+            p.innerHTML = "晚上好";
+        }
+    </script>
+</body>
+</html>
