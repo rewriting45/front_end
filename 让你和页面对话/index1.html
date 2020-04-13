@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="name" type="text">
+    <button id="submit-btn">Submit</button>
+    <script>
+        
+        let button = document.getElementById('submit-btn');
+        let input = document.getElementById('name');
+        button.onclick = func();
+
+        function func(){
+            alert(input.value);
+        }
+
+        document.addEventListener('keyup',function(e){
+            if(e.keyCode == 13){
+                func();
+            }else if(e.keyCode == 27){
+                input.value = '';
+            }
+        })
+        
+    </script>
+</body>
+
+</html>

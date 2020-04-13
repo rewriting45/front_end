@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 480px;
+            height: 480px;
+            background: url('images/erik_ce204002.jpg') no-repeat;
+            background-position: 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        let h = 0;
+        let box = document.getElementById('box');
+        box.onclick = function (){
+            let myVar = setInterval(() => {
+                box.style.backgroundPositionY = h+'px';
+                h -= 480;
+                if (h == 8160){
+                    clearInterval(myVar);
+                    h = 0;
+                }
+            }, 100);
+        }
+    </script>
+</body>
+</html>
